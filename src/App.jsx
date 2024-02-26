@@ -6,7 +6,7 @@ import Apk from './assets/treasurequest.apk'; // Assuming 'treasurequest.apk' is
 const App = () => {
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <p style={{ fontFamily: 'Pixelify Sans', fontSize: '3rem', textAlign: 'center', color: 'goldenrod', fontWeight: 'bold' }}>Treasure QUEST</p>
+      <p style={{ fontFamily: 'Pixelify Sans', fontSize: '3rem', textAlign: 'center', color: 'goldenrod', fontWeight: 'bold' }}>Treasure Quest</p>
       <a
         href={Apk}
         download='treasurequest'
