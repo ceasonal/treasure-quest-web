@@ -1,0 +1,8 @@
+body {
+  background-image: url('./background.gif');
+  background-size: 100%; /* Adjust the percentage as needed */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+}
