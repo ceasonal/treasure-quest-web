@@ -1,5 +1,4 @@
 import React from 'react';
-
 function GameHTMLPage() {
   const iframeStyle = {
     display: 'block',
