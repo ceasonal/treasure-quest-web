@@ -5,5 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.apk'],
-  rewrites: [{ "source": "/(.*)", "destination": "/" }] 
+  routes: [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+  server: {
+      historyApiFallback: true,
+    },
 })
