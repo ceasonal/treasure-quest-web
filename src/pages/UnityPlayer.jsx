@@ -1,14 +1,9 @@
 import React from 'react';
-function GameHTMLPage() {
-  const iframeStyle = {
-    display: 'block',
-    margin: 'auto',
-    border: 'none',
-  };
 
+function GameHTMLPage() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <iframe src="../../game.html" title="Game" width="1000" height="600" style={iframeStyle}></iframe>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+    <iframe frameborder="0" src="https://itch.io/embed-upload/9984191?color=68BDFA" allowfullscreen="" width="1080" height="1940" ><a href="https://nnk2003.itch.io/treasure-quest">Play Treasure Quest - PC on itch.io</a></iframe>
     </div>
   );
 }
