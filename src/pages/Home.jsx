@@ -1,16 +1,18 @@
 import React from 'react';
 import './Home.css';
 import Apk from '../assets/treasurequest.apk'; 
+import Windownload from '../assets/windowsTreasure.zip';
 import { makeStyles } from "@mui/styles";
 import { Link } from 'react-router-dom';
 import AndroidIcon from '@mui/icons-material/Android';
 import ComputerIcon from '@mui/icons-material/Computer';
+import PixIcon from '@mui/icons-material/Pix';
 
 const useStyles = makeStyles((theme) => ({
   pixelbttn: {
     backgroundColor:'#FFA3F6',
     borderColor: '#FFE5FC #C71AF7 #C71AF7 #FFE5FC',
-  	outline: '2px solid #000',
+    outline: '2px solid #000',
     width: '240px', 
     height: '50px',
     borderWidth: '4px', 
@@ -40,27 +42,41 @@ const App = () => {
   const classes = useStyles();
   return (
     <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-      <p  className={classes.gradientText} style={{  fontSize: '3rem', textAlign: 'center', fontWeight: 'bold' }}>Treasure Quest</p>
+      <p className={classes.gradientText} style={{ fontSize: '3rem', textAlign: 'center', fontWeight: 'bold' }}>Treasure Quest</p>
       <a
         href={Apk}
-        download='treasurequest'
+        download='treasurequest.apk'
         target="_blank"
         rel="noreferrer"
       >
         <button
           variant="contained"
-          style={{ fontFamily: 'Minecraft Regular', textTransform: 'none', fontSize: '1.2rem', marginTop: '20px' }}
+          style={{ fontFamily: 'Minecraft Regular', textTransform: 'none', fontSize: '1.2rem', marginTop: '20px', width:'280px' }}
           className={`${classes.pixelbttn} ${classes.pixelbttnHover}`}
         >
           Download APK &nbsp; <AndroidIcon/>
         </button>
       </a>
+      <a
+        href={Windownload}
+        download='windowsTreasure.zip'
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button
+          variant="contained"
+          style={{ fontFamily: 'Minecraft Regular', textTransform: 'none', fontSize: '1.2rem', marginTop: '20px',  width:'280px' }}
+          className={`${classes.pixelbttn} ${classes.pixelbttnHover}`}
+        >
+          Download Windows &nbsp; <PixIcon/>
+        </button>
+      </a>
       <Link
         to="/webgame"
       >
-      <button
+        <button
           variant="contained" 
-          style={{ fontFamily: 'Minecraft Regular', textTransform: 'none', fontSize: '1.2rem', marginTop: '20px' }}
+          style={{ fontFamily: 'Minecraft Regular', textTransform: 'none', fontSize: '1.2rem', marginTop: '20px',  width:'280px' }}
           className={`${classes.pixelbttn} ${classes.pixelbttnHover}`}
         >
           Play On Web &nbsp; <ComputerIcon/>
